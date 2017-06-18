@@ -49,3 +49,24 @@ nav a {
   border-radius: 3px;
   text-decoration: underline;
 }
+
+@media (max-width: 1200px) {
+  header {
+    width: 100%;    
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .logo, nav {
+    float: none;
+  }
+  .header__container {
+    height: auto;
+  }
+  nav {
+    text-align: center;
+  }
+  nav a {
+    display: block;
+  }
+}
