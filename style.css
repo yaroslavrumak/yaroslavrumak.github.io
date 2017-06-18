@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header-background {
+  background: lightgray;
+}
+
+header{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 99px 0 65px;
+}
+
+.header__container {
+  height: 40px;
+}
+
+.logo {
+  background: url(logo.png);
+  width: 252px;
+  height: 40px;
+  float: left;
+}
+
+nav {
+  float: right;
+  line-height: 40px;
+}
+
+nav a {
+  color: gray;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.nav__button {
+  background: lightblue;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: underline;
+}
