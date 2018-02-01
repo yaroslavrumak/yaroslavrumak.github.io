@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bad Script', sans-serif;
+    color: white;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+
+.item {
+      height: 100vh;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.item:hover {
+    flex-basis: 100%;
+}
+
+span {
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.item-1 {
+    background: url('img/4500877-summer-beach-wallpapers.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('img/4501111-summer-beach-wallpapers.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('img/4501152-summer-beach-wallpapers.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.item-4 {
+    background: url('img/4501159-summer-beach-wallpapers.jpg') no-repeat center center;
+    background-size: cover;
+}
+@media (max-width: 640px) {
+    .slider {
+        flex-flow: column;
+        height: 100vh
+    }
+    .item {
+        width: 100%;
+    
+    }
+    .item:hover {
+        flex-grow: 30%;
+    }
+}
