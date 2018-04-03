@@ -1,0 +1,17 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 69 102" style="enable-background:new 0 0 69 102;" xml:space="preserve">
+<style type="text/css">
+	.logo-fill{fill:#FFFFFF;}
+</style>
+<g>
+	<rect x="0.3" y="79" class="logo-fill" width="5.2" height="5.2"/>
+	<rect x="18.8" y="79" class="logo-fill" width="5.2" height="5.2"/>
+	<rect x="0.3" y="86.6" class="logo-fill" width="5.2" height="15.4"/>
+	<rect x="63.8" y="96.9" class="logo-fill" width="5.2" height="5.2"/>
+	<rect x="63.8" y="79" class="logo-fill" width="5.2" height="15.4"/>
+	<path class="logo-fill" d="M8.4,86.6v15.4h15.5V86.6H8.4z M18.8,97h-5.2l0-5.2h5.2L18.8,97z"/>
+	<path class="logo-fill" d="M69,0H0v68.7h37.2v10.4l13.4-10.4H69V0z M58.6,58.4h-7.9l-7.6,6.8v-6.8H10.3V10.4h48.3V58.4z"/>
+	<path class="logo-fill" d="M32,99.1v-1.8h10.4V86.7H26.9V102l15.5,0v-2.9L32,99.1z M32,89.6h5.2v5.2H32V89.6z"/>
+	<path class="logo-fill" d="M55.7,89.6v1.8H45.3V102h15.5V86.7l-15.5,0v2.9L55.7,89.6z M55.7,99.1h-5.2v-5.2h5.2V99.1z"/>
+</g>
+</svg>
