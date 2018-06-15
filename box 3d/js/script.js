@@ -40,7 +40,7 @@ window.onload = function() {
   
   
   
-  var material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: true, map: texture});
+  var material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: false, map: texture});
   var mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
   
