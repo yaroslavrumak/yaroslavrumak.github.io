@@ -34,7 +34,7 @@ window.onload = function() {
   var light = new THREE.AmbientLight(0xffffff);
   scene.add(light);
   
-  var texture = new THREE.TextureLoader().load('img/9452-v2.jpg');
+  var texture = new THREE.TextureLoader().load('img/crate.gif');
   var geometry = new THREE.BoxBufferGeometry(512, 512, 512);
  
   
