@@ -34,7 +34,7 @@ window.onload = function() {
   var light = new THREE.AmbientLight(0xffffff);
   scene.add(light);
   
-  var texture = new THREE.TextureLoader().load('img/1.jpgs');
+  var texture = new THREE.TextureLoader().load('img/1.jpg');
   var geometry = new THREE.BoxBufferGeometry(512, 516, 512);
  
   
