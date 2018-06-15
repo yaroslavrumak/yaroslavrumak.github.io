@@ -29,7 +29,7 @@ window.onload = function() {
   var scene = new THREE.Scene();
   
   var camera = new THREE.PerspectiveCamera(45, width/height, 0.1, 5000);
-  camera.position.set(100, 0, 1000);
+  camera.position.set(100, 100, 1000);
   
   var light = new THREE.AmbientLight(0xffffff);
   scene.add(light);
