@@ -95,7 +95,7 @@ window.onload = function () {
     document.addEventListener('mousemove', onDocumentMouseMove, false);
     document.addEventListener('mouseup', onDocumentMouseUp, false);
     document.addEventListener('mouseout', onDocumentMouseOut, false);
-    mouseXOnMouseDown = event.clientY - windowHalfY;
+    mouseYOnMouseDown = event.clientY - windowHalfY;
     targetRotationOnMouseDown = targetRotation;
   }
 
@@ -105,7 +105,7 @@ window.onload = function () {
   }
 
   function onDocumentMouseMove(event) {
-    mouseX = event.clientY - windowHalfY;
+    mouseY = event.clientY - windowHalfY;
     targetRotation = targetRotationOnMouseDown + (mouseY - mouseYOnMouseDown) * 0.02;
   }
 
@@ -131,7 +131,7 @@ window.onload = function () {
   function onDocumentTouchStart(event) {
     if (event.touches.length === 1) {
       event.preventDefault();
-      mouseXOnMouseDown = event.touches[0].pageY - windowHalfY;
+      mouseYOnMouseDown = event.touches[0].pageY - windowHalfY;
       targetRotationOnMouseDown = targetRotation;
     }
   }
@@ -146,7 +146,7 @@ window.onload = function () {
   function onDocumentTouchMove(event) {
     if (event.touches.length === 1) {
       event.preventDefault();
-      mouseX = event.touches[0].pageY - windowHalfY;
+      mouseY = event.touches[0].pageY - windowHalfY;
       targetRotation = targetRotationOnMouseDown + (mouseY - mouseYOnMouseDown) * 0.05;
     }
   }
