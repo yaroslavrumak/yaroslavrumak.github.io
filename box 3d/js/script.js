@@ -53,13 +53,13 @@ window.onload = function () {
 
 
   var geometry = new THREE.BoxBufferGeometry(256, 256, 256);
+  var texture = new THREE.TextureLoader().load( "img/2.jpg" );
 
 
 
 
   var material = new THREE.MeshBasicMaterial({
-    color: 0x00ff00,
-    wireframe: true
+    map: texture
   });
   var mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
