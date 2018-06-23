@@ -58,7 +58,7 @@ function init() {
   
   // model
   var loader = new THREE.FBXLoader();
-  loader.load('fbx/img/1.fbx', function (object) {
+  loader.load('img/1.fbx', function (object) {
     object.mixer = new THREE.AnimationMixer(object);
     mixers.push(object.mixer);
     var action = object.mixer.clipAction(object.animations[0]);
