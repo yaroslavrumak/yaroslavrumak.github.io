@@ -42,6 +42,8 @@ Tf 1.00 1.00 1.00
 map_Kd Gameboy_lp_Gameboy_mat_BaseColor.png
 bump Gameboy_lp_Gameboy_mat_Normal.png -bm 1
 Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Spec.png
 newmtl lambert7SG
 illum 4
 Kd 0.00 0.00 0.00
