@@ -75,14 +75,13 @@ scene.add(light);
 
 
 
-var mearth = new THREE.TextureLoader().load('img/1.jpg');
-var bearth = new THREE.TextureLoader().load('img/2.jpg');
-var cearth = new THREE.TextureLoader().load('img/3.jpg');
-var searth = new THREE.TextureLoader().load('img/4.png');
+var mearth = new THREE.TextureLoader().load('img/1.1.jpg');
+var bearth = new THREE.TextureLoader().load('img/2.1.jpg');
+var cearth = new THREE.TextureLoader().load('img/3.1.jpg');
 
 var geo1 = new THREE.SphereGeometry(0.4, 32, 32);
 var mat1 = new THREE.MeshPhongMaterial({
-  map: new THREE.TextureLoader().load('img/1.jpg'),
+  map: mearth,
   bumpMap: bearth,
   bumpScale: 0.005
 });
