@@ -1,4 +1,4 @@
-Skip to content Search or jump to… Pull requests Issues Marketplace Explore @yaroslavrumak Sign out 0 0 0 dmytromamon/dmytromamon.github.io Code Pull requests 0 Projects 0 Insights dmytromamon.github.io/globe/css/index.css 209af2c 2 days ago @dmytromamon dmytromamon update 209 lines (192 sloc) 5.07 KB body {
+body {
   position: fixed;
   top: 0;
   left: 0;
@@ -187,8 +187,7 @@ Skip to content Search or jump to… Pull requests Issues Marketplace Explore @y
   color: #fff;
 }
 
-.data-container p,
-.data-container h4 {
+.data-container p, .data-container h4 {
   margin-bottom: 6px;
   margin-top: 0;
   color: #fff;
