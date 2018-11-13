@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: url('bg.svg');
+}
+
+header {
+    margin: 31px 0 91px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #454545;
+    font-weight: bold;
+    margin: auto 0 ;
+}
+
+nav ul li a {
+    color: #707070;
+    font-size: 20;
+    transition: all ease .5s;
+}
+
+.table {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.16);
+    padding: 15px;
+    transform: scale(.97);
+    opacity: .5;
+    transition: all ease .5s;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 34.2px;
+/*    transition: all ease 1s;*/
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.time, .shts {
+    margin-top: 16.1px;
+}
+
+.time {
+    cursor: pointer;
+}
+
+.title_tscore, .title_hscore {
+    font-weight: bold;
+}
+
+.title_hscore {
+    margin-top: 29.1px;
+    margin-bottom: 16.1px;
+    transition: all ease 1s;
+}
+
+.hsore {
+    margin-top: 29.1px;
+    margin-bottom: 16.1px;
+}
+
+.title_hscore.active {
+    font-size: 19px;
+}
+
+.table.active{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.title.active {
+    color: #62D58A;
+    font-weight: bold;
+}
+
+
+nav ul li.active a {
+    color: #62D58A;
+    font-weight: bold;
+}
+
+.col-md-12 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-bottom: -25px;
+}

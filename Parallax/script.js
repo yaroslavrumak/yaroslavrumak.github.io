@@ -32,3 +32,5 @@ $(window).on('touchmove', function(e) {
         })
     })
 })
+
+
