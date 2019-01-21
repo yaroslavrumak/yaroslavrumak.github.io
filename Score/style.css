@@ -117,7 +117,5 @@ nav ul li.active a {
 svg {
     position: absolute;
     bottom: 0;
-    left: 0;
-    z-index: -1;
     margin-bottom: -25px;
 }

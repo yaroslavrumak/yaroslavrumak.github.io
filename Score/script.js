@@ -11,21 +11,19 @@ $(document).on('click', '.nav_link', function (e) {
     $('.title_hscore').eq(i).addClass('active');
 })
 var b = [];
-//var b2 = [];
 
 $(document).on({
 
     mouseenter: function () {
         var c = $('.time').index(this);
-        var p = $('.title_hscore').index();
-        var s = $('.score').index();
+        var home = $('.shts').eq(c).find('.home');
+        var away = $('.shts').eq(c).find('.away');
+
         i = 0;
-        
+
         for (a = 0; a < $('.home').length / $('.table').length; a++) {
             b.push(+($('.home').eq((a + 1) + $('.home').length / $('.table').length * i - 1).text()) + +($('.away').eq((a + 1) + $('.home').length / $('.table').length * i - 1).text()));
         }
-        
-//        b2.push(+($('.home').eq(c).text()) + +($('.away').eq(c).text()));
 
         $('.time').eq(c).css({
             color: '#62D58A',
@@ -35,9 +33,11 @@ $(document).on({
             color: '#62D58A',
             fontWeight: 'bold'
         });
-        $('.title_hscore').eq(p).text('Current 10 min score:');
-//        $('.score1').eq(p).text(Math.max.apply(Math, b2));
-    },
+        $('.time').eq(c).closest('.table').find('.title_hscore').text('Current 10 min score:');
+        b2 = (+home.text() + +away.text()); 
+        $('.time').eq(c).closest('.table').find('.score1').text(b2);
+
+    }, 
     mouseleave: function () {
         $('.time').css({
             color: '#707070',

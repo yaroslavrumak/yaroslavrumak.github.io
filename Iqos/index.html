@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="prompt-background">
+        <div id="age-check-prompt" class="modal-prompt" style="text-align:center;">
+            <div>
+                <img src="img/logo2.png">
+            </div>
+            <p>This website is restricted to adult smokers 18 years and above and residing in the country of this website.</p>
+            <button id="submit_birthdate" class="button-verify">Enter</button>
+            <button id="button-exit" class="button-verify" onclick="location.href='https://google.com;">Leave</button>
+        </div>
+    </div>
+
+    <a href="#x" class="overlay" id="login_form"></a>
+    <div class="popup">
+        <div class="popup-logo-box"></div>
+        <img src="img/logo.png" alt="">
+        <h1>Ja tak</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <form id="form">
+            <input type="text" name="name" size="40" placeholder="name" required="required" value="NAVN">
+            <input type="text" name="adress" size="40" placeholder="adress" required="required" value="ADRESSE">
+            <input type="text" name="age" size="3" placeholder="age" required="required" value="ADLER">
+            <input type="text" name="email" size="40" placeholder="email" required="required" value="E-MAIL">
+            <input type="text" name="phone" size="40" placeholder="phone" value="TLF.">
+            <input class="button" type="submit" value="send" />
+            <input type="hidden" name="formData" value="Submited form">
+        </form>
+        <div class="little-text">(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo commodi accusantium hic, consequuntur accusamus quam fuga aspernatur magni ea illo modi aliquam recusandae ipsa explicabo perferendis placeat, dolore natus ex!)</div>
+    </div>
+
+    <div class="top-box">
+        <div class="logo-box">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="h1-box">
+            <h1>Lorem ipsum dolor sit amet</h1>
+        </div>
+        <div class="video-box">
+            <h1>Video</h1>
+        </div>
+    </div>
+
+    <div class="down-box">
+        <div class="txt-box">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        </div>
+        <div class="container">
+            <div class="left-box">
+                <div class="img-box">
+                    <img src="img/woman.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="text-box-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, nam cum libero inventore, natus quas aspernatur ex:
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <div class="text-box-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Rerum aliquid dolore veritatis,<br> numquam, enim odio illo nostrum similique quia mollitia consequatur</p>
+                    <p> impedit nam recusandae quibusdam libero </p>
+                </div>
+            </div>
+        </div>
+        <div class="button-box">
+            <h1>ja tak</h1>
+            <BR></BR>
+            <span>Lorem ipsum dolor sit amet</span><br>
+            <a href="#login_form" id="login_pop" class="on-button">klik her</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="boxes">
+            <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ad perspiciatis eligendi sit dolore explicabo porro doloremque, excepturi tempore</div>
+            <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio consequuntur commodi saepe minima perspiciatis ullam autem perferendis sint vel alias </div>
+            <div class="box3">
+                <span><p>Lorem ipsum dolor sit,</p><br><p> consectetur adipisicing</p></span><br>
+                <a href="#login_form" id="login_pop">klik her</a>
+            </div>
+        </div>
+        <div class="bottom-text">*Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur unde neque quos dignissimos fuga consequatur, saepe doloribus, explicabo adipisci, recusandae deserunt, nihil doloremque vitae voluptatem error laborum. Asperiores, quo?</div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("form").submit(function() {
+                // get form ID
+                var formID = $(this).attr('id');
+                // Add # symbol to ID
+                var formNm = $('#' + formID);
+                $.ajax({
+                    type: "POST",
+                    url: 'send.php',
+                    data: formNm.serialize(),
+                    success: function(data) {
+                        // Get the text if sent
+                        $(formNm).html(data);
+                    },
+                    error: function(jqXHR, text, error) {
+                        // Get the error if sent
+                        $(formNm).html(error);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
